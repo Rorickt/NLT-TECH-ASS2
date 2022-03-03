@@ -4,8 +4,15 @@ from collections import Counter
 
 
 def allowed_paths_gold(featuredata, data_type):
-    """
+    """ Returns a list of common argument dependency paths,
+        and gold argument labels
+    Args:
+        featuredata: a conllu of the feature extractions including gold labels
+        data_type: a string of 'train' / 'dev' / 'test' representing the data type
     
+    Returns:
+        final_allowed_paths: a list of strings of the allowed dependency paths
+        gold_args: a list of gold argument labels ('_','V','ARG')
     """
     
     gold_args = []
@@ -50,8 +57,16 @@ def allowed_paths_gold(featuredata, data_type):
 
 
 def extract_arguments(preprocessed_data, features, set_allowed_paths, data_type):
-    """
+    """ Returns a list of argument labels extracted via dependency rules
     
+    Args:
+        preprocessed_data: a conllu of the preprocessed gold data
+        features: a conllu of the extracted features of the same date type
+        allowed_paths: a list of strings representing common argument dependency paths
+        data_type: a string representing the current data type ('train'/'test'/'dev')
+    
+    Returns:
+        extracted_args: a list of extracted argument labels ('_','V','ARG')
     """
     
     extracted_args=[]
