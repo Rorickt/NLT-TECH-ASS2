@@ -3,10 +3,23 @@ import csv
 from collections import defaultdict
 import networkx as nx
 
-# code inspired by:    and    , adapted to work with gold data instead of spacy
+# function 'shortest_dependency_path' inspired by: 
+#    and:
+#   
+# adapted to work with gold data instead of spacy
+
 def shortest_dependency_path(tokens, children, dep_rel, e1=None, e2=None):
-    """
+    """ Returns a string representing the shortest path between 
+            two tokens, shown by dependency
+    Args:
+        tokens: a conllu of the feature extractions including gold labels
+        children:
+        dep_rel:
+        e1:
+        e2:
     
+    Returns:
+        dep_path:
     """
     edges = []
     relations=defaultdict()
