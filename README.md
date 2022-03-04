@@ -31,10 +31,10 @@ Running *main.py* from commandline is done with various arguments:
 - folder *output*: contains all results from the extractions and classifications
 - 
 
-----CONTACT----
-Mekselina Doğanç: m.doganc@student.vu.nl
-Mojca Kloos: m.c.kloos@student.vu.nl
-Rorick Terlou: m.r.terlou@student.vu.nl
+----CONTACT---- \n
+Mekselina Doğanç: m.doganc@student.vu.nl \n
+Mojca Kloos: m.c.kloos@student.vu.nl  \n
+Rorick Terlou: m.r.terlou@student.vu.nl \n
 
 
 
