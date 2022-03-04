@@ -3,7 +3,7 @@ import csv
 from collections import defaultdict
 import networkx as nx
 
-# code inspired by:    and    , adapted to work with gold data instead of spacy
+# Shortest_dependency_path inspired by: Margriet Korteweg, Sybren Moolhuizen, Shuyi Shen, adapted to work with gold data instead of spacy
 def shortest_dependency_path(tokens, children, dep_rel, e1=None, e2=None):
     """ Returns the shortest dependency path based on a source and target token in a sentence 
     
