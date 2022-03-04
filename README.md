@@ -16,6 +16,21 @@ Running *main.py* from commandline is done with various arguments:
 `arg_classify`: only classifies the arguments
 `full`: Runs all steps in order of the arguments above
 
+### Features for classification
+
+- token itself
+- POS-tag
+- previous token
+- previous POS-tag
+- next token
+- next POS-tag
+- head
+- head init
+- predicate
+- dependency path
+
+
+
 ### Code structure
  
 - *main.py*
@@ -31,10 +46,10 @@ Running *main.py* from commandline is done with various arguments:
 - folder *output*: contains all results from the extractions and classifications
 - 
 
-----CONTACT---- \n
-Mekselina Doğanç: m.doganc@student.vu.nl \n
-Mojca Kloos: m.c.kloos@student.vu.nl  \n
-Rorick Terlou: m.r.terlou@student.vu.nl \n
+----CONTACT---- \
+Mekselina Doğanç: m.doganc@student.vu.nl \
+Mojca Kloos: m.c.kloos@student.vu.nl  \
+Rorick Terlou: m.r.terlou@student.vu.nl \
 
 
 
@@ -42,7 +57,22 @@ Rorick Terlou: m.r.terlou@student.vu.nl \n
 
 - Pandas
 - Numpy
+- argparse
 - From sklearn: 
 	- feature_extraction.DictVectorizer
+	- classification_report
+	- linear_model.LogisticRegression 
 - From collections:
 	- defaultdict
+- from nx:
+	- nx
+	- shortest_path
+- json
+- tempfile
+- from typing:
+	- Dict
+	- Iterable
+	- List
+	- Tuple
+- allennlp
+- torch
