@@ -13,7 +13,7 @@ The classifier is based on a Logistic Regression.
 
 #### Assignment 2.1: 
 Running *main.py* from commandline is done with various arguments:\
-`-preproc`: Preprocess files for following codes (required to run once)
+`-preproc`: Preprocess files for following codes (required to run once)\
 `-pred_ex`: only extract predicates, stores the output in the output folder\
 `-arg_ex`: only does argument extraction, also stores the output\
 `-arg_class`: only classifies the arguments\
