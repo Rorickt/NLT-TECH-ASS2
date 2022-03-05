@@ -2,7 +2,7 @@
 
 ## General Info
 This code extract the predicates and arguments from a sentence. 
-It does each step seperately, and uses the Universal Propbank ConLL data for each step.
+It does each step seperately, and uses the Universal Proposition Banks ConLL data (https://github.com/System-T/UniversalPropositions) for each step.
 It finds the predicates by simply selecting all verbs. To find the arguments it uses the predicates as stated in the original data.
 It does not use the output of step 1 as input for step 2.
 For step 3 the code create a classifier to find the argument type for each argument in the data.
