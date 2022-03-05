@@ -11,7 +11,7 @@ The classifier is based on a Logistic Regression.
 
 ## How to run
 
-#### Assignment 2.1: \n
+#### Assignment 2.1: \
 Running *main.py* from commandline is done with various arguments:\
 `-preproc`: Preprocess files for following codes (required to run once)
 `-pred_ex`: only extract predicates, stores the output in the output folder\
@@ -19,7 +19,7 @@ Running *main.py* from commandline is done with various arguments:\
 `-arg_class`: only classifies the arguments\
 `-all`: Runs all steps in order of the arguments above (including preprocessing)\
 
-#### Assignment 2.2: \n
+#### Assignment 2.2: \
 Run *main.py* from assignment 2.1 with the commandline argument `preproc` (unless already done). 
 Following step 1, run *conll_to_jsonl.py* for the train data and for the dev data. 
 Finally, with the files readied, run *srl_main.py*, which should print two labeled examples.
