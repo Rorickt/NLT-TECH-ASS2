@@ -65,8 +65,10 @@ Mekselina Doğanç: m.doganc@student.vu.nl \
 Mojca Kloos: m.c.kloos@student.vu.nl  \
 Rorick Terlou: m.r.terlou@student.vu.nl \
 
-
-
+\
+\
+\
+\
 **Needed modules and packages**
 
 - Pandas
