@@ -6,17 +6,25 @@ It does each step seperately, and uses the Universal Propbank ConLL data for eac
 It finds the predicates by simply selecting all verbs. To find the arguments it uses the predicates as stated in the original data.
 It does not use the output of step 1 as input for step 2.
 For step 3 the code create a classifier to find the argument type for each argument in the data.
-The classifier is based on a Support Vector Machine.
+The classifier is based on a Logistic Regression.
 
 
-### How to run
-Running *main.py* from commandline is done with various arguments:
-`pred_extract`: only extract predicates, stores the output in the output folder
-`arg_extract`: only does argument extraction, also stores the output
-`arg_classify`: only classifies the arguments
-`full`: Runs all steps in order of the arguments above
+## How to run
 
-### Features for classification
+#### Assignment 2.1: \n
+Running *main.py* from commandline is done with various arguments:\
+`-preproc`: Preprocess files for following codes (required to run once)
+`-pred_ex`: only extract predicates, stores the output in the output folder\
+`-arg_ex`: only does argument extraction, also stores the output\
+`-arg_class`: only classifies the arguments\
+`-all`: Runs all steps in order of the arguments above (including preprocessing)\
+
+#### Assignment 2.2: \n
+Run *main.py* from assignment 2.1 with the commandline argument `preproc` (unless already done). 
+Following step 1, run *conll_to_jsonl.py* for the train data and for the dev data. 
+Finally, with the files readied, run *srl_main.py*, which should print two labeled examples.
+
+## Features for classification
 
 - token itself
 - POS-tag
@@ -29,11 +37,12 @@ Running *main.py* from commandline is done with various arguments:
 - predicate
 - dependency path
 
-
-
-### Code structure
+## Code structure
  
+
 - *main.py*
+- *srl_main.py*
+- 
 - folder *util* : 
 	- *preprocess_file_structure.py* : contains the function to restructure the conll file
 	- *pred_extract.py* : contains all functions for predicate extraction.
@@ -41,10 +50,15 @@ Running *main.py* from commandline is done with various arguments:
 	- *feat_extract.py* : contains all functions to extract the features needed for argument classification
 	- *arg_classifier.py* : contains all functions to create and run the classifier
 	- *evaluation.py* : contains evaluation metrics functions
+-folder *tools*	:
+	- *con*
+	- **
+	- **
+	- **
+	- **
 
 - folder *data* :  Contains the conll data sets (cite)
 - folder *output*: contains all results from the extractions and classifications
-- 
 
 ----CONTACT---- \
 Mekselina Doğanç: m.doganc@student.vu.nl \
