@@ -11,7 +11,7 @@ The classifier is based on a Logistic Regression.
 
 ## How to run
 
-#### Assignment 2.1: \
+#### Assignment 2.1: 
 Running *main.py* from commandline is done with various arguments:\
 `-preproc`: Preprocess files for following codes (required to run once)
 `-pred_ex`: only extract predicates, stores the output in the output folder\
@@ -19,7 +19,7 @@ Running *main.py* from commandline is done with various arguments:\
 `-arg_class`: only classifies the arguments\
 `-all`: Runs all steps in order of the arguments above (including preprocessing)\
 
-#### Assignment 2.2: \
+#### Assignment 2.2: 
 Run *main.py* from assignment 2.1 with the commandline argument `preproc` (unless already done). 
 Following step 1, run *conll_to_jsonl.py* for the train data and for the dev data. 
 Finally, with the files readied, run *srl_main.py*, which should print two labeled examples.
@@ -39,10 +39,9 @@ Finally, with the files readied, run *srl_main.py*, which should print two label
 
 ## Code structure
  
-
 - *main.py*
 - *srl_main.py*
-- 
+- *conll_to_json.py*
 - folder *util* : 
 	- *preprocess_file_structure.py* : contains the function to restructure the conll file
 	- *pred_extract.py* : contains all functions for predicate extraction.
@@ -51,15 +50,16 @@ Finally, with the files readied, run *srl_main.py*, which should print two label
 	- *arg_classifier.py* : contains all functions to create and run the classifier
 	- *evaluation.py* : contains evaluation metrics functions
 -folder *tools*	:
-	- *con*
-	- **
-	- **
-	- **
-	- **
+	- *srl_model_bert.py*
+	- *srl_model_ltsm.py*
+	- *srl_predictor.py*
+	- *srl_reader.py*
 
 - folder *data* :  Contains the conll data sets (cite)
 - folder *output*: contains all results from the extractions and classifications
 
+\
+\
 ----CONTACT---- \
 Mekselina Doğanç: m.doganc@student.vu.nl \
 Mojca Kloos: m.c.kloos@student.vu.nl  \
