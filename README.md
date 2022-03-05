@@ -17,46 +17,46 @@ Running *main.py* from commandline is done with various arguments:\
 `-pred_ex`: only extract predicates, stores the output in the output folder\
 `-arg_ex`: only does argument extraction, also stores the output\
 `-arg_class`: only classifies the arguments\
-`-all`: Runs all steps in order of the arguments above (including preprocessing)\
+`-all`: Runs all steps in order of the arguments above (including preprocessing)
 
 #### Assignment 2.2: 
-Run *main.py* from assignment 2.1 with the commandline argument `preproc` (unless already done). 
+Run *main.py* from assignment 2.1 with the commandline argument `-preproc` (unless already done). 
 Following step 1, run *conll_to_jsonl.py* for the train data and for the dev data. 
 Finally, with the files readied, run *srl_main.py*, which should print two labeled examples.
 
 ## Features for classification
 
-- token itself
+- Token
 - POS-tag
-- previous token
-- previous POS-tag
-- next token
-- next POS-tag
-- head
-- head init
-- predicate
-- dependency path
+- Previous token
+- Previous POS-tag
+- Next token
+- Next POS-tag
+- Head
+- Head init
+- Predicate
+- Dependency path
 
 ## Code structure
  
 - *main.py*
 - *srl_main.py*
 - *conll_to_json.py*
-- folder *util* : 
+- folder: **util** : 
 	- *preprocess_file_structure.py* : contains the function to restructure the conll file
 	- *pred_extract.py* : contains all functions for predicate extraction.
 	- *arg_extract.py* : contains all functions for argument extraction
 	- *feat_extract.py* : contains all functions to extract the features needed for argument classification
 	- *arg_classifier.py* : contains all functions to create and run the classifier
 	- *evaluation.py* : contains evaluation metrics functions
--folder *tools*	:
+- folder: **tools** : *(supplied by professors and unedited)*
 	- *srl_model_bert.py*
 	- *srl_model_ltsm.py*
 	- *srl_predictor.py*
 	- *srl_reader.py*
 
-- folder *data* :  Contains the conll data sets (cite)
-- folder *output*: contains all results from the extractions and classifications
+- folder: **data** :  Contains the conll data sets (https://github.com/System-T/UniversalPropositions `UP-english-EWT`)
+- folder: **output**: contains all results from the extractions and classifications
 
 \
 \
